@@ -1,0 +1,2 @@
+# yudao-init
+init env
