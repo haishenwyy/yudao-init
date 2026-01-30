@@ -44,6 +44,10 @@ spec:
               value: nacos
             - name: NACOS_AUTH_IDENTITY_VALUE
               value: nacos
+            # ✅ JWT 密钥（2.2.0.1+ 必须，至少 32 字节且 Base64 编码）
+            # 生产环境请用 Secret 存储，此处为示例值
+            - name: NACOS_CORE_AUTH_PLUGIN_NACOS_TOKEN_SECRET_KEY
+              value: "VGhpc0lzTXlDdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY="
 ---
 apiVersion: v1
 kind: Service
