@@ -33,8 +33,6 @@ spec:
               value: "512m"
             - name: JVM_XMN
               value: "256m"
-            - name: NACOS_AUTH_ENABLE
-              value: "false"
             # ✅ 开启 Nacos 登录鉴权
             - name: NACOS_AUTH_ENABLE
               value: "true"
