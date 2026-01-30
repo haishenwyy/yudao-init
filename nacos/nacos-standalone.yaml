@@ -35,6 +35,17 @@ spec:
               value: "256m"
             - name: NACOS_AUTH_ENABLE
               value: "false"
+            # ✅ 开启 Nacos 登录鉴权
+            - name: NACOS_AUTH_ENABLE
+              value: "true"
+            # ✅ 鉴权系统类型（2.x 必须）
+            - name: NACOS_AUTH_SYSTEM_TYPE
+              value: nacos
+            # ✅ 身份校验（防止未授权访问）
+            - name: NACOS_AUTH_IDENTITY_KEY
+              value: nacos
+            - name: NACOS_AUTH_IDENTITY_VALUE
+              value: nacos  
           readinessProbe:
             httpGet:
               path: /nacos/actuator/health
