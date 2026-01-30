@@ -43,19 +43,7 @@ spec:
             - name: NACOS_AUTH_IDENTITY_KEY
               value: nacos
             - name: NACOS_AUTH_IDENTITY_VALUE
-              value: nacos  
-          readinessProbe:
-            httpGet:
-              path: /nacos/actuator/health
-              port: 8848
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /nacos/actuator/health
-              port: 8848
-            initialDelaySeconds: 60
-            periodSeconds: 20
+              value: nacos
 
 ---
 apiVersion: v1
